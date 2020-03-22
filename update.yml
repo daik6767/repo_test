@@ -1,0 +1,10 @@
+---
+- hosts: all_hosts
+  user: root
+  become: yes
+  tasks:
+  - name: yum update command for all servers via ssh
+    yum:
+      name: '*'
+      state: latest
+      exclude: kernel*
