@@ -1,9 +1,9 @@
 ---
-- hosts: all_hosts
-  user: root
-  become: yes
+- hosts: target
   tasks:
   - name: yum update command for all servers via ssh
+    become_user: root
+    become_method: su
     yum:
       name: '*'
       state: latest
