@@ -1,6 +1,5 @@
 # repo_test
-test repository
 
-test test test
+test repository for ansible.
 
-hello git
+ex.) yum install, file copy and over write.
